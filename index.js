@@ -60,7 +60,7 @@ function Car(model,milesPerGallon) {
 }
 Car.prototype.fill= function(gallons){ this.tank.push (gallons)};
 
-const car1 = new Car(soul, 28);
+const car1 = new Car('soul', 28);
 
 console.log(car1.fill(26));
 
