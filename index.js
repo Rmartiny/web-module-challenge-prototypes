@@ -92,7 +92,7 @@ Person.call(this,name,age)
 
 }
 Baby.prototype = Object.create(Person.prototype)
- Baby.prototype.play= function() {return `Playing with ${favoriteToy}`}
+ Baby.prototype.play= function() {return `Playing with ${this.favoriteToy}`}
 
 
 
@@ -101,7 +101,7 @@ Baby.prototype = Object.create(Person.prototype)
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
+  1. window binding- when 
   2. 
   3. 
   4. 
