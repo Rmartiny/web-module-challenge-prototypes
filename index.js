@@ -30,10 +30,9 @@ Person.prototype.poop = function() { this.stomach = []; }
 Person.prototype.toString =  function(){
   return `${this.name},${this.age}`
 };
- const person1 = new Person ({
-  name:'Andrew',
-  age: 30,
- });
+ const andrew = new Person ('Andrew', 30)
+
+ console.log(andrew.toString());
 
 
 /*
