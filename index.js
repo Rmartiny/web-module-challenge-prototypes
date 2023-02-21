@@ -92,7 +92,9 @@ Person.call(this,name,age)
 
 }
 Baby.prototype = Object.create(Person.prototype)
- Baby.prototype.play= function(favoriteToy) {return `Playing with ${favoriteToy}`}
+ Baby.prototype.play= function() {return `Playing with ${favoriteToy}`}
+
+
 
 
 
