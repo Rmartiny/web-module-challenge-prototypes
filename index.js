@@ -101,10 +101,11 @@ Baby.prototype = Object.create(Person.prototype)
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. window binding- when 
-  2. 
-  3. 
-  4. 
+  1. window binding- when this object is in the global scope or the console window
+  2. implicet binding -  when the "this" is to the left of the dot 
+
+  3. explicit binding-  is uning a method such as .call or .apply
+  4.  new binding - creates a individual copy of a prototype.
 */
 
 ///////// END OF CHALLENGE /////////
