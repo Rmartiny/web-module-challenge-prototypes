@@ -87,11 +87,11 @@ console.log(car1.drive(250))
 */
 
 function Baby(name,age,favoriteToy) {
-  this.name=name
-  this.age=age
+Person.call(this,name,age)
   this.favoriteToy= favoriteToy
 
 }
+Baby.prototype = Object.create(Person.prototype)
  Baby.prototype.play= function(favoriteToy) {return `Playing with ${favoriteToy}`}
 
 
