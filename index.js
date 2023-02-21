@@ -86,10 +86,14 @@ console.log(car1.drive(250))
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby() {
+function Baby(name,age,favoriteToy) {
+  Baby.prototype= Person.prototype.call;
+  this.favoriteToy= favoriteToy
 
 }
+ Baby.prototype.play= function(favoriteToy) {return `Playing with ${favoriteToy}`}
 
+ 
 
 /* 
   TASK 4
