@@ -58,11 +58,11 @@ function Car(model,milesPerGallon) {
   this.odometer = 0;
 
 }
-Car.prototype.fill= function(gallons){ this.tank.push (gallons)};
+Car.prototype.fill= function(gallons) { if (this.tank.length < 12) {this.tank.push(gallons)} }
 
 const car1 = new Car('soul', 28);
 
-console.log(car1.fill(26));
+console.log(car1.fill(11));
 
 /*
   TASK 3
